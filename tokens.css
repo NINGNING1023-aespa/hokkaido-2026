@@ -1,0 +1,24 @@
+/* Hallmark · macrostructure: Photographic · theme: custom winter · nav: minimal · footer: inline
+ * pre-emit critique: P5 H4 E4 S5 R4 V5
+ * Source: user-approved design v2.3. Glass and skeuomorphic iPod are explicit requirements. */
+@font-face{font-family:Caveat;src:url('assets/caveat.ttf') format('truetype');font-display:swap;font-weight:400;font-style:normal}
+:root{
+ --color-bg:#f2f6f8;--color-surface:#fff;--color-soft:#e8f0f4;--color-ink:#20313b;--color-muted:#526875;--color-faint:#6c808d;--color-primary:#244b62;--color-primary-hover:#163c52;--color-on-primary:#fff;--color-accent:#986b3f;--color-border:#cfdee5;--color-focus:#28739b;--color-glass:rgba(255,255,255,.73);--color-glass-solid:#f8fbfc;--color-glass-line:rgba(255,255,255,.82);--color-scrim:rgba(14,33,47,.32);--color-warning:#755424;--color-warning-bg:#f5ecdb;--color-success:#33634f;--color-success-bg:#e4efe8;--color-shadow:rgba(28,61,82,.12);--color-transparent:transparent;--color-white:#fff;--color-hero:#edf7ff;--color-hero-muted:#c4d9eb;
+ --color-ipod:#f9faf9;--color-ipod-edge:#cdd1d3;--color-wheel:#edeff0;--color-wheel-center:#fafbfb;--color-screen:#c9d7d8;--color-screen-ink:#2b4246;--color-screen-dark:#9bb7b9;--color-screen-light:#e1e9e9;--color-album:#355860;--color-album-ink:#eff5ef;--color-ipod-shadow:rgba(37,57,66,.23);--color-ipod-highlight:#fff;
+ --font-body:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;--font-display:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;--font-hand:'Caveat',cursive;--text-xs:.8125rem;--text-sm:.875rem;--text-base:1rem;--text-md:1.125rem;--text-lg:1.375rem;--text-xl:1.75rem;--text-2xl:2.25rem;--text-3xl:clamp(2rem,3.5vw,3.5rem);--text-hero:clamp(4.5rem,8vw,8.5rem);--leading:1.65;
+ --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.5rem;--space-6:2rem;--space-7:3rem;--space-8:4rem;--space-9:6rem;--space-10:8rem;
+ --radius-sm:.5rem;--radius-md:1rem;--radius-lg:1.5rem;--radius-pill:999px;--page-max:80rem;--reading-max:65ch;--page-gutter:clamp(1.25rem,4vw,4rem);--header-height:5rem;--target:2.75rem;--blur:18px;--shadow-panel:0 16px 55px var(--color-shadow);--shadow-small:0 5px 22px var(--color-shadow);
+ --duration-fast:150ms;--duration-normal:220ms;--duration-slow:280ms;--ease-out:cubic-bezier(.23,1,.32,1);--ease-in-out:cubic-bezier(.77,0,.175,1);--ease-drawer:cubic-bezier(.32,.72,0,1);
+ --color-hero-bg:#0c4b88;--color-hero-mobile:#07549d;--color-hero-nav:rgba(12,40,67,.17);--color-hero-line:rgba(237,247,255,.14);
+ --z-header:20;--z-player:25;--z-menu:30;--z-toast:100;
+}
+[data-theme=dark]{--color-bg:#14232d;--color-surface:#203440;--color-soft:#293f4d;--color-ink:#e7f0f4;--color-muted:#b6cbd6;--color-faint:#99b1bf;--color-primary:#b8d8e9;--color-primary-hover:#d8ecf7;--color-on-primary:#173141;--color-accent:#dfbd92;--color-border:#3b5666;--color-focus:#8bcbea;--color-glass:rgba(29,48,61,.88);--color-glass-solid:#203440;--color-glass-line:rgba(157,196,217,.18);--color-scrim:rgba(4,14,21,.6);--color-warning:#f0d2a4;--color-warning-bg:#463d2c;--color-success:#bddfc9;--color-success-bg:#284137;--color-shadow:rgba(0,7,14,.34)}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--color-bg:#14232d;--color-surface:#203440;--color-ink:#e7f0f4;--color-muted:#b6cbd6}}
+
+@font-face{font-family:"Long Cang";src:url("assets/long-cang.ttf") format("truetype");font-display:swap;font-style:normal;font-weight:400}
+:root{--font-hand-cn:"Long Cang","Kaiti SC","KaiTi",cursive}
+
+:root{--calendar-selected-fill:rgba(255,255,255,.24);--calendar-selected-sheen:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.19) 56%,rgba(210,233,245,.33));--calendar-selected-edge:rgba(255,255,255,.88);--calendar-selected-shadow:rgba(51,91,121,.27);--calendar-selected-rim:rgba(111,153,179,.24)}
+[data-theme=dark]{--calendar-selected-fill:rgba(214,239,252,.12);--calendar-selected-sheen:linear-gradient(135deg,rgba(239,251,255,.28),rgba(215,241,255,.08) 56%,rgba(160,213,239,.16));--calendar-selected-edge:rgba(230,249,255,.46);--calendar-selected-shadow:rgba(2,14,23,.38);--calendar-selected-rim:rgba(171,221,244,.28)}
+:root{--liquid-panel-fill:rgba(255,255,255,.35);--liquid-panel-sheen:linear-gradient(135deg,rgba(255,255,255,.76),rgba(255,255,255,.20) 48%,rgba(206,230,244,.22));--liquid-panel-edge:rgba(255,255,255,.88);--liquid-panel-rim:rgba(139,177,199,.25);--liquid-panel-shadow:rgba(46,86,112,.12)}
+[data-theme=dark]{--liquid-panel-fill:rgba(181,223,245,.06);--liquid-panel-sheen:linear-gradient(135deg,rgba(232,248,255,.18),rgba(211,237,252,.045) 48%,rgba(138,198,229,.07));--liquid-panel-edge:rgba(220,246,255,.27);--liquid-panel-rim:rgba(133,187,217,.14);--liquid-panel-shadow:rgba(0,9,16,.22)}
